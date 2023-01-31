@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--int insertUser();
+mapper接口的全类名要和映射文件的namespaces保持一致
+mapper接口的方法名要和id要和我们的方法名字一致-->
+<mapper namespace="com.czh.mybatis.mapper.Usermapper">
+    <!--int insertUser();
+    !id要和我们的方法名字一致-->
+    <insert id="insertUser">
+        insert into user values(null,'admin','123456',23,'男','12345@qq.com')
+    </insert>
+
+    <update id="updateUser">
+        update user set username='大阿萨达',password='1231231231' where id =222
+    </update>
+</mapper>
